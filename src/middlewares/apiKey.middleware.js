@@ -36,11 +36,11 @@ export const apiKeyMiddleware = async (req, res, next) => {
                 apiKeyId: apiKey.id,
                 month
             },
-            update: {},
-            create: {
-                apiKeyId: apiKey.id,
-                month
-            }
+        },
+        update: {},
+        create: {
+            apiKeyId: apiKey.id,
+            month
         }
     });
 
