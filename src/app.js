@@ -4,6 +4,7 @@ import helmet from "helmet";
 
 import { config } from "./config/config.js";
 import authRoutes from "./routes/auth.routes.js";
+import keyRoutes from "./routes/key.routes.js";
 
 import { globalRateLimit } from "./middlewares/rateLimiter.middleware.js";
 import { requestLogger } from "./middlewares/logger.middleware.js";
@@ -21,6 +22,7 @@ app.use(globalRateLimit);
 app.use(requestLogger);
 
 app.use("/auth", authRoutes);
+app.use("/keys", keyRoutes);
 
 app.use(errorHandler);
 
