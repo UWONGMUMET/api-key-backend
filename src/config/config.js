@@ -10,8 +10,8 @@ export const config = {
     },
 
     quota: {
-        FREE: Number(process.env.QUOTA_FREE),
-        PAID: Number(process.env.QUOTA_PAID)
+        FREE: Number(process.env.FREE_PLAN_QUOTA),
+        PAID: Number(process.env.PAID_PLAN_QUOTA)
     },
 
     rateLimit: {
